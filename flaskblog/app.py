@@ -24,6 +24,15 @@ def index():
 @app.route('/about')
 def about():
     return render_template ('about.html')
+@app.route('/music')
+def music():
+    return render_template ('music.html')
+@app.route('/Life')
+def Life():
+    return render_template ('Life.html')
+@app.route('/tvorenie')
+def tvorenie():
+    return render_template ('tvorenie.html')
 
 @app.route('/user/<string:name>/<int:id>')
 def user(name, id):
